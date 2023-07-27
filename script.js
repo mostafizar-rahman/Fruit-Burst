@@ -2,9 +2,11 @@ $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     items: 1,
-    dots: false
+    dots: false,
+    autoplay:true,
+    autoplaySpeed:3000
   });
 
   $(".menu").on("click", function () {

@@ -57,12 +57,15 @@
       .font-lato {
         font-family: "Lato", sans-serif;
       }
+      .owl-nav {
+        display: block !important;
+      }
     </style>
   </head>
 
   <body class="font-lato">
     <header
-      class="relative xl:bg-[#F85559] max-w-[1440px] w-full h-[120px] rounded-full mx-auto flex justify-between items-center py-[10px] xl:px-9 px-0 xl:mt-[50px] mt-0"
+      class="relative xl:bg-[#F85559] max-w-[1440px] w-full px-3 h-[120px] rounded-full mx-auto flex justify-between items-center py-[10px] xl:px-9 px-0 xl:mt-[50px] mt-0"
     >
       <!-- For Desktop -->
       <ul class="hidden xl:flex items-center space-x-5">
@@ -130,7 +133,9 @@
     </header>
     <main>
       <!-- Banner -->
-      <section class="max-w-[1440px] w-full mx-auto xl:mt-20 mt-0 relative">
+      <section
+        class="max-w-[1440px] w-full px-3 mx-auto xl:mt-20 mt-0 relative"
+      >
         <div class="owl-carousel owl-theme">
           <div
             class="relative xl:pt-[100px] py-28 xl:py-0 xl:pb-[200px] rounded-lg"
@@ -141,7 +146,7 @@
           >
             <div class="max-w-[661px] mx-auto text-center">
               <h2
-                class="text-white font-[800] md:text-[72px] text-[45px] leading-[86px]"
+                class="text-white font-[800] md:text-[72px] text-[45px] md:leading-[86px]"
               >
                 Exotic tastes at your doorstep
               </h2>
@@ -150,7 +155,31 @@
               >
               <br />
               <button
-                class="bg-[#F85559] text-white w-[154px] h-[64px] rounded-lg mt-5 text-xl font-bold"
+                class="bg-[#F85559] text-white w-[154px] md:h-[64px] h-[50px] rounded-lg mt-5 md:text-xl text-base font-bold"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="relative xl:pt-[100px] py-28 xl:py-0 xl:pb-[200px] rounded-lg"
+            style="
+              background-image: url(./images/banner1.png);
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="max-w-[661px] mx-auto text-center">
+              <h2
+                class="text-white font-[800] md:text-[72px] text-[45px] md:leading-[86px]"
+              >
+                Exotic tastes at your doorstep
+              </h2>
+              <small class="text-white font-medium text-xl leading-[24px]"
+                >We supply highly quality organic products</small
+              >
+              <br />
+              <button
+                class="bg-[#F85559] text-white w-[154px] md:h-[64px] h-[50px] rounded-lg mt-5 md:text-xl text-base font-bold"
               >
                 Shop Now
               </button>
@@ -203,10 +232,10 @@
         </div>
       </section>
 
-      <section class="max-w-[1440px] w-full mx-auto pt-36">
+      <section class="max-w-[1440px] w-full px-3 mx-auto pt-36">
         <div class="flex lg:flex-row flex-col justify-between">
           <div>
-            <h3 class="pb-6 font-extrabold text-5xl text-red-500">
+            <h3 class="pb-6 font-extrabold md:text-5xl text-3xl text-red-500">
               Deal of the day
             </h3>
             <p class="font-medium text-xs text-gray-900 pb-12">
@@ -219,25 +248,33 @@
           <!-- time bar -->
           <div class="grid grid-flow-col gap-5 text-centerauto-cols-max">
             <div class="flex flex-col">
-              <span class="countdown font-extrabold text-5xl text-green-600">
+              <span
+                class="countdown font-extrabold md:text-5xl text-3xl text-green-600"
+              >
                 <span style="--value: 10"></span>:
               </span>
               <p class="font-medium text-xs text-yellow-800">Days</p>
             </div>
             <div class="flex flex-col">
-              <span class="countdown font-extrabold text-5xl text-green-600">
+              <span
+                class="countdown font-extrabold md:text-5xl text-3xl text-green-600"
+              >
                 <span style="--value: 12"></span>:
               </span>
               <p class="font-medium text-xs text-yellow-800">Hours</p>
             </div>
             <div class="flex flex-col">
-              <span class="countdown font-extrabold text-5xl text-green-600">
+              <span
+                class="countdown font-extrabold md:text-5xl text-3xl text-green-600"
+              >
                 <span style="--value: 27"></span>:
               </span>
               <p class="font-medium text-xs text-yellow-800">Minutes</p>
             </div>
             <div class="flex flex-col">
-              <span class="countdown font-extrabold text-5xl text-green-600">
+              <span
+                class="countdown font-extrabold md:text-5xl text-3xl text-green-600"
+              >
                 <span style="--value: 00"></span>
               </span>
               <p class="font-medium text-xs text-yellow-800">Seconds</p>
@@ -246,7 +283,7 @@
         </div>
       </section>
 
-      <section class="max-w-[1440px] w-full mx-auto mt-20">
+      <section class="max-w-[1440px] w-full px-3 mx-auto mt-20">
         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
           <!-- card-1 -->
           <div class="card bg-gray-400">
@@ -855,11 +892,13 @@
           background-repeat: no-repeat;
           background-size: cover;
         "
-        class="max-w-[1440px] w-full py-[150px] mx-auto rounded-lg mt-28"
+        class="max-w-[1440px] w-full px-3 py-[150px] mx-auto rounded-lg mt-28"
       >
         <div class="">
           <div class="max-w-[615px] mx-auto text-center text-white">
-            <h2 class="text-5xl font-bold">Meet the team section</h2>
+            <h2 class="md:text-5xl text-3xl font-bold">
+              Meet the team section
+            </h2>
             <small class="text-base font-medium inline-block mt-3"
               >Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical Latin literature from 45 BC, making
@@ -992,9 +1031,11 @@
         </div>
       </section>
       <!-- choose Us -->
-      <section class="max-w-[1440px] w-full mx-auto mt-28 rounded-lg">
+      <section class="max-w-[1440px] w-full px-3 mx-auto mt-28 rounded-lg">
         <div class="max-w-[615px] mx-auto text-center">
-          <h2 class="font-[800] text-5xl leading-[57px]">Why Choose Us</h2>
+          <h2 class="font-[800] md:text-5xl text-3xl leading-[57px]">
+            Why Choose Us
+          </h2>
           <small class="text-base font-medium"
             >Contrary to popular belief, is not simply random text. It has roots
             in a piece of classical Latin literature from 45 BC, making it over
