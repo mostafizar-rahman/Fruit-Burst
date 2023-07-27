@@ -1,9 +1,13 @@
-$( document ).ready(function() {
-    $('.banner').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: $(".pp2"),
-        nextArrow: $(".nn2"),
-      });
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    items: 1,
+    dots: false
+  });
+
+  $(".menu").on("click", function () {
+    $(".nav_menu").slideToggle();
+  });
 });
